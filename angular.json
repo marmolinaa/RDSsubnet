@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "redesdedatoss": {
@@ -117,8 +117,16 @@
               "devServerTarget": "redesdedatoss:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "redesdedatoss"
+    }
+  },
+  "defaultProject": "redesdedatoss",
+  "cli": {
+    "analytics": "b7b762d9-a3a5-43b0-837e-ab0c088d3f64"
+  }
 }
