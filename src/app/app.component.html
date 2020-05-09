@@ -1,43 +1,39 @@
+<!-- TOP BAR CON IMAGENES DE LA UNAM Y LA FACULTAD -->
 <nav class="sticky-top py-1" style="background-color: #ffffff; position: static;">
   <div class="container d-flex flex-column flex-md-row justify-content-between">
     <img src="assets/UNAM.png" class="rounded float-left img-fluid" alt="Responsive image">
     <img src="assets/FI.png" class="rounded float-right img-fluid" alt="Responsive image">
-    <!--
-      <img src="/assets/FI.png" class="rounded float-right img-fluid" alt="Responsive image">
-      poner la diagonal al momento de generar un deploy, no encuentra la ruta
-    -->
   </div>
-
 </nav>
 
-
+<!-- DATOS DEL PROYECTO -->
 <div class="card text-white bg-danger" style="width: 100%;">
-  <small>
-    <div class="card-header row mr-0">
-      <div class="col-4">
-        <p><em>Asignatura: <p><strong>REDES DE DATOS SEGURAS</strong></p></em></p>
-      </div>
-      <div class="col-4">
-        <p><em>Profesora: <p><strong>M.C. Cintia Quezada Reyes</strong></p></em></p>
-      </div>
-      <div class="col-4">
-        <p><em>Grupo: <p><strong>01</strong></p></em></p>
-      </div>
+  <div class="card-header row mr-0">
+    <div class="col">
+      <p><em>Asignatura: <p><strong>REDES DE DATOS SEGURAS</strong></p></em></p>
     </div>
-    <div class="card-body row mr-0">
-      <div class="col-6">
-        <p><em>Alumnos:
-            <p><strong>Aguilera Palacios Luis Ernesto</strong></p>
-            <p><strong>Molina Medina Marco Antonio</strong></p>
-          </em></p>
-      </div>
-      <div class="col-6">
-        <p><em>Tema: <p><strong>RDS PROYECTO</strong></p></em></p>
-      </div>
+    <div class="col">
+      <p><em>Profesora: <p><strong>M.C. Cintia Quezada Reyes</strong></p></em></p>
     </div>
-  </small>
+    <div class="col">
+      <p><em>Alumnos:
+          <p><strong>Aguilera Palacios Luis Ernesto</strong></p>
+          <p><strong>Molina Medina Marco Antonio</strong></p>
+        </em></p>
+    </div>
+    <div class="col">
+      <p><em>Tema: <p><strong>RDS PROYECTO</strong></p></em></p>
+    </div>
+    <div class="col">
+      <p><em>Grupo: <p><strong>01</strong></p></em></p>
+    </div>
+  </div>
+  <div class="card-body row mr-0">
+    <p><em>INSTRUCCIONES DE USO: <p><strong>...</strong></p></em></p>
+  </div>
 </div>
 
+<!-- MENÚ DE ALGORITMOS -->
 <ul class="nav nav-pills row card border-primary mr-0" id="pills-tab" role="tablist" style="flex-direction: row;">
   <li class="nav-item col-6 p-0">
     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
@@ -53,15 +49,245 @@
   </li>
 </ul>
 
-<div class="tab-content" id="pills-tabContent">
+
+<!-- CUERPO -->
+
+<div class="tab-content container mt-3" id="pills-tabContent">
+
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-    <h1>
-      A) Sumarización de rutas
-    </h1>
+
+    <div class="row">
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Dirección IP:</label>
+          <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1">
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Clase:</label>
+          <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Direccion:</label>
+          <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Subredes:</label>
+          <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Máscara:</label>
+          <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-outline-success col">Anterior</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-outline-success col">Siguiente</button>
+      </div>
+      
+    </div>
+
+    <table class="table table-bordered mt-3">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Decimal</th>
+          <th scope="col">Hexadecimal</th>
+          <th scope="col">Binario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">ID de red</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">ID de subred</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">Primera dirección</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">Última dirección</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">Dirección de Broadcast</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">Máscara de subred</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">Wildcard</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
+
   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-    <h1>
-      B) Subneteo
-    </h1>
+
+    <div class="row">
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Dirección IP:</label>
+          <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1">
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Clase:</label>
+          <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Direccion:</label>
+          <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Subredes:</label>
+          <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+      <form class="col">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Máscara:</label>
+          <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn btn-outline-success col">Anterior</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-outline-success col">Siguiente</button>
+      </div>
+      
+    </div>
+
+    <table class="table table-bordered mt-3">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Decimal</th>
+          <th scope="col">Hexadecimal</th>
+          <th scope="col">Binario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">ID de red</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">ID de subred</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">Primera dirección</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">Última dirección</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">Dirección de Broadcast</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">Máscara de subred</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">Wildcard</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
+
 </div>
